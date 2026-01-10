@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendent Selector</title>
+    <style>
+        #new{
+            color:cadetblue;
+        }
+        /*
+            all elements targeted togther
+        */
+        #now p{
+            color:blueviolet;
+        }
+        /*
+            paragraph tag based elements targeted separately
+        */
+        #now h1{
+            color:brown;
+        }
+        /*
+            h1(heading) tag based elements targeted separately
+        */
+    </style>
+</head>
+<body>
+    <div id="new">
+        <h1>heading new</h1>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>This is the second paragraph.</p>
+    </div>
+    
+    <hr>
+    <div id="now">
+        <h1>heading new</h1>
+        <h1>heading 2</h1>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>This is the second paragraph.</p>
+    </div>
+    
+</body>
+</html>
