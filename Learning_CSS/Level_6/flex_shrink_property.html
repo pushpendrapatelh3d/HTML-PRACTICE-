@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title><style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin-right: 5px;
+}
+#heading {margin-left: 50px;}
+#container {
+    height: 150px;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#box1 { background-color: aqua;}
+#box2 { background-color: blueviolet;}
+#box3 {
+    background-color: yellow;
+    flex-shrink:0.5;
+}
+#box4 { background-color: tomato;}
+#_box3 {
+    background-color: yellow;
+    flex-shrink:2;
+}
+#__box3 {
+    background-color: yellow;
+    flex-shrink:0;
+}
+#___box3 {
+    background-color: yellow;
+    flex-shrink:1;
+}
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">ITEM1</div>
+        <div class="box" id="box2">ITEM2</div>
+        <div class="box" id="__box3" >ITEM3</div>
+        <div class="box" id="box4">ITEM4</div>  
+    </div>
+    <p> FLEX SHRINK:0</p>
+    <div id="container">
+        <div class="box" id="box1">ITEM1</div>
+        <div class="box" id="box2">ITEM2</div>
+        <div class="box" id="box3">ITEM3</div>
+        <div class="box" id="box4">ITEM4</div>   
+    </div>
+    <p> FLEX SHRINK:0.5</p>
+    <div id="container">
+        <div class="box" id="box1">ITEM1</div>
+        <div class="box" id="box2">ITEM2</div>
+        <div class="box" id="___box3" >ITEM3</div>
+        <div class="box" id="box4">ITEM4</div>  
+    </div>
+    <P>FLEX SHRINK:1</P>
+    <div id="container">
+        <div class="box" id="box1">ITEM1</div>
+        <div class="box" id="box2">ITEM2</div>
+        <div class="box" id="_box3" >ITEM3</div>
+        <div class="box" id="box4">ITEM4</div>
+    </div>
+    <p> FLEX SHRINK:2</p>  
+</body>
+</html>
