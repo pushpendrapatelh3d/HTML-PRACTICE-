@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.n1{
+    height: 50px;
+    width: 120px;
+    padding: 10px;
+    background-color: rgb(242, 167, 113);
+    border-radius: 50px;
+    transition-property: all ;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.3s;   
+}
+
+.n1:hover {
+    background-color: rgb(242, 96, 47);
+    height:60px;
+    width:130px;
+    cursor: pointer;
+}
+
+.n1:active {
+    background-color: rgb(246, 243, 76);
+    height:70px;
+    width:140px;
+}
+
+.n2{
+    height: 50px;
+    width: 120px;
+    padding: 10px;
+    background-color: rgb(242, 167, 113);
+    border-radius: 50px;
+    transition-property: all ;
+    transition-duration: 0.3s;
+    transition-timing-function: steps(3);
+    transition-delay: 0.3s;   
+}
+
+.n2:hover {
+    background-color: rgb(242, 96, 47);
+    height:60px;
+    width:130px;
+    cursor: pointer;
+}
+
+.n2:active {
+    background-color: rgb(246, 243, 76);
+    height:70px;
+    width:140px;
+}
+.n3{
+    height: 50px;
+    width: 120px;
+    padding: 10px;
+    background-color: rgb(242, 167, 113);
+    border-radius: 50px;
+    transition:all 0.3s ease-in-out 0.3s;  
+}
+
+.n3:hover {
+    background-color: rgb(242, 96, 47);
+    height:60px;
+    width:130px;
+    cursor: pointer;
+}
+
+.n3:active {
+    background-color: rgb(246, 243, 76);
+    height:70px;
+    width:140px;
+}
+
+
+    </style>
+</head>
+<body>
+    <button class="n1">
+        Click me
+    </button>
+    <button class="n2">
+        Click me
+    </button>
+    <br>
+    <br>
+    <button class="n3">
+        Click me
+    </button>
+
+</body>
+</html>
